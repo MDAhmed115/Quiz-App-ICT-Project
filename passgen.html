@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="passgenstyles.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+             <div class="homepage-div">
+                <img id="logo" src="security.png" alt="security logo">
+                <a href="index.html" id="hp">Homepage</a>
+            </div>
+            <div class="navdiv">
+                <ul>
+                    <li class="nav-list"><a href="guide.html">Guidance</a></li>
+                    <li class="nav-list"><a href="passcheck.html">Password Checker</a></li>
+                    <li class="nav-list"><a href="passgen.html">Password Generator</a></li>
+                    <li class="nav-list"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+    </header>
+    <section>
+        <h1 class="main-text">
+        <div class="h1-container">
+            Password Generator
+        </div>
+        
+        </h1>
+        <hr>
+        <div class="pswgencont">
+            <div class="pswgen" id="passwordJs"></div>
+            <button class="gen-button" onclick="genpsw()">generate</button>
+        </div>
+        <hr>
+    </section>
+    <section>
+        <div class="disc">
+            <p>The password-strength checker and any example code demonstrated on this website are intended for educational and awareness purposes only. They should not be used to generate, store, or protect real passwords for any personal, academic, or professional accounts.</p>
+            <p>While programming languages like C, C++, Python, and JavaScript include functions that appear to generate “random” values, these functions are often not truly random and are not designed for security-critical use. Many of these built-in random number generators are predictable, reproducible, or rely on seeds that can be guessed by an attacker. Because of this, any password created using simple random functions (such as rand(), Math.random(), or equivalent) may be unsafe, easily cracked, or vulnerable to brute-force and pattern-based attacks.</p>
+            <p>In real cybersecurity practice, secure passwords should only be generated using cryptographically strong random number generators, reputable password managers, or other tools specifically designed for secure credential creation. These specialized systems use algorithms that meet industry standards and are built to resist prediction, duplication, and unauthorized access.</p> 
+        </div>
+</section>
+</body>
+<script>
+    function genpsw(){
+        var mypsw="";
+        const alphnum="qwertyuiopasdfghjklzxcvbnm,.;[]{}WERTYUIOPASDFGHJKLZXCVBN1234567890!@#$%^&*()";
+        for(let i=0;i<12;i++){
+            mypsw+=alphnum[Math.floor(Math.random()*alphnum.length)]
+        }
+        document.getElementById("passwordJs").innerHTML = mypsw;
+    }
+    var psw="password appears here";
+    document.getElementById("passwordJs").innerHTML = psw;
+</script>
+</html>

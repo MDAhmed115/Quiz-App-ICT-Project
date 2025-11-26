@@ -1,0 +1,111 @@
+
+#logo{
+
+    margin: 10px;
+    padding: 0%;
+    width: 5em;
+    height: 5em;
+}
+.nav-list{
+    display: inline-block;
+    margin-left: 30px;
+
+}
+body{
+    background-color: #ffeedc;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 57, 102);
+    padding:20px;
+}
+.navdiv{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+}
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: large;
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
+ul{
+    margin: 0px;
+}
+.main-text{
+    size: 30px;
+    text-align: center;
+    color: black;
+    margin-top:3em ;
+    margin-bottom: 3em;
+    font-family: Arial;
+}
+.h1-container{
+    background-color:rgb(199, 188, 161);
+    display: inline-block;
+    padding: 1em;
+    border-radius: 3em;
+    
+}
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: rgb(189, 188, 188);
+    border-width: 7px;
+    width: 70px;
+    margin: 100px auto;
+}
+.pswgencont{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:  85% 15%;
+    height: 6em;
+    width: 44em;
+}
+.pswgen{
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-family: arial;
+    font-size: 2em;
+    background-color: rgb(139, 126, 116);
+    border-radius:2em 0em 0em 2em ;
+}
+.gen-button{
+    border-radius: 0em 2em 2em 0em ;
+    border-style: hidden;
+    background-color:rgb(199, 188, 161) ;
+    transition: 0.5s;
+    color:  rgb(46, 37, 37);
+    font-size: large;
+}
+.gen-button:hover{
+    background-color:rgb(219, 211, 189)  ;
+    color: rgb(0, 0, 0);
+}
+.disc{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    font-size: 1.22em;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.homepage-div{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+#hp{
+    font-size: 1.4em;
+}

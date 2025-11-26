@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="passcheckstyles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="homepage-div">
+                <img id="logo" src="security.png" alt="security logo">
+                <a href="index.html" id="hp">Homepage</a>
+            </div>
+            <div class="navdiv">
+                <ul>
+                    <li class="nav-list"><a href="guide.html">Guidance</a></li>
+                    <li class="nav-list"><a href="passcheck.html">Password Checker</a></li>
+                    <li class="nav-list"><a href="passgen.html">Password Generator</a></li>
+                    <li class="nav-list"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="main-text">
+            <div class="h1-container">
+                Password Checker
+            </div>
+        </h1>
+        <hr>
+        <section>
+            
+            <div class="button-holder">
+                <div class="checkbox">
+                <input type="text" id="enterpsw">
+                </div>
+                <button class="check-button" onclick="generatereport()">
+                    Check Psw
+                </button>
+            </div>
+        </section>
+        <hr>
+        <section class="repsec">
+            <h2 id="passwordreportJs">
+                password report appears here
+            </h2>
+            
+        </section>
+    </header>
+</body>
+<script>
+    function generatereport(){
+        var score=20;
+        var special=0;
+        var capital=0;
+        var small=0;
+        var num=0;
+        var password=document.getElementById("enterpsw").value;
+        for(let x=0;x<password.length;x++){
+            if( "!@#$%^&*()-+{}[]:?><,.".includes(password[x])){
+                special++;
+            }
+            else if("QWERTYUIOPASDFGHJKLZXCVBNM".includes(password[x])){
+                capital++;
+            }
+            else if("qwertyuiopasdfghjklzxcvbnm".includes(password[x])){
+                small++
+            }
+            else if("1234567890".includes(password[x])){
+                num++
+            }
+        }
+        if(special>=3){
+            score+=20;
+        }
+        if(capital>=3){
+            score+=20;
+        }
+        if (small>=3){
+            score+=20;
+        }
+        if (num>=3){
+            score+=30;
+        }
+        if(score>100){
+            score=100;
+        }
+        if(password.length<=7){
+            score-=20;
+        }
+        document.getElementById("passwordreportJs").innerHTML = "password strength is "+score+"%";
+
+    }
+</script>
+</html>
