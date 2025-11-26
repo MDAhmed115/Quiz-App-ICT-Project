@@ -105,6 +105,186 @@ body{
     margin-bottom: 3%;
 }
 
+
+.password{
+    margin-right: 0px;
+    margin-left: 75%;
+    width: 350px;
+}
+
+.password h1{
+    text-align: left;;
+}
+
+.first-row{
+    display: block;
+    position: relative;
+    margin-left: 55%;
+    margin-right: 25%;
+}
+
+.second-row{
+    display: block;
+    position: relative;
+    margin-left: 55%;
+    margin-right: 25%;
+    padding-top: 10%;
+}
+
+.browsing{
+    margin-right: 0px;
+    margin-left: 75%;
+    width: 350px;
+}
+
+.browsing h1{
+    text-align: left;
+}
+
+.safety p{
+    width: 350px;
+    height: auto;
+    text-align: justify;
+    margin-top: 3em;
+    background-color: rgb(248, 206, 151);
+    padding: 20px;
+    border-radius: 30px;
+    color: rgb(99, 41, 0);
+    font-weight: bold;
+}
+
+.safety img{
+    width: 250px;
+    height: 250px
+}
+
+table p{
+    width: 250px;
+    height: auto;
+    text-align: justify;
+    margin-top: 20%;
+    background-color: rgb(248, 206, 151);
+    padding: 20px;
+    border-radius: 30px;
+    color: rgb(99, 41, 0);
+    font-weight: bold;
+}
+
+table img{
+    width: 250px;
+    height: 250px
+}
+
+table h1{
+    text-align: left;
+    position: relative;
+.nav-list{
+    margin-left: 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: large;
+}
+a:hover{
+    color: rgb(0, 12, 36);
+}
+ul{
+    margin: 0px;
+}
+.navbar{
+    background-color: rgb(3, 57, 102);
+    padding:20px;
+}
+.navdiv{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+#logo{
+    margin: 10px;
+    padding: 0%;
+    width: 5em;
+    height: 5em;
+}
+
+#home{
+    margin-left: 0px;
+}
+
+h1 a{
+    font-size: 40px;
+}
+
+#welcome{
+    margin-top: 2.6em;
+    margin-bottom: 2.6em;
+    font-size: 6.4em;
+    color: rgb(99, 41, 0);
+}
+#guide{
+    margin-top: 2.6em;
+    margin-bottom: 2.6em;
+    font-size: 4em;
+    color: rgb(99, 41, 0);
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: rgb(197, 159, 147);
+    border-width: 7px;
+    width: 70px;
+    margin: 100px auto;
+}
+
+h1{
+    color:chocolate
+}
+
+img{
+    width: auto;
+    height: 150px;
+    border-radius: 30px;
+}
+
+.guide-page{
+    margin-bottom: 3%;
+}
+
+.pass-check-page{
+    display: inline-block;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 10%;
+}
+
+.pass-gen-page{
+    display: inline-block;
+    position: relative;
+    margin-right: 20%;
+}
+
+body{
+    background-color: #ffeedc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foot-text{
+    color: grey;
+}
+
+.footer{
+    background-color: rgb(0, 16, 29);
+    padding: 20px;
+}
+
+.about-page{
+    margin-bottom: 3%;
+}
+
 .phishing-text{
     width: 250px;
     height: 250px;
