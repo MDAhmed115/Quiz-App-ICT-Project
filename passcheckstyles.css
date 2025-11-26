@@ -3,10 +3,21 @@
     margin-left: 30px;
 
 }
+#logo{
+
+    margin: 10px;
+    padding: 0%;
+    width: 5em;
+    height: 5em;
+}
+
 body{
     background-color: #ffeedc;
 }
 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(3, 57, 102);
     padding:20px;
 }
@@ -14,7 +25,7 @@ body{
         height: 50px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: right;
 }
 a{
     color: white;
@@ -86,4 +97,12 @@ section{
 h2{
     font-family: Arial;
     font-weight: bold;
+}
+.homepage-div{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* optional – spacing between logo and text */
+}
+#hp{
+    font-size: 1.4em;
 }
