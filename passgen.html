@@ -32,8 +32,8 @@
         </h1>
         <hr>
         <div class="pswgencont">
-            <div class="pswgen"></div>
-            <button class="gen-button">generate</button>
+            <div class="pswgen" id="passwordJs"></div>
+            <button class="gen-button" onclick="genpsw()">generate</button>
         </div>
         <hr>
     </section>
@@ -45,4 +45,16 @@
         </div>
 </section>
 </body>
+<script>
+    function genpsw(){
+        var mypsw="";
+        const alphnum="qwertyuiopasdfghjklzxcvbnm,.;[]{}WERTYUIOPASDFGHJKLZXCVBN1234567890!@#$%^&*()";
+        for(let i=0;i<12;i++){
+            mypsw+=alphnum[Math.floor(Math.random()*alphnum.length)]
+        }
+        document.getElementById("passwordJs").innerHTML = mypsw;
+    }
+    var psw="password appears here";
+    document.getElementById("passwordJs").innerHTML = psw;
+</script>
 </html>

@@ -71,6 +71,12 @@ hr {
     width: 44em;
 }
 .pswgen{
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-family: arial;
+    font-size: 2em;
     background-color: rgb(139, 126, 116);
     border-radius:2em 0em 0em 2em ;
 }
@@ -98,7 +104,7 @@ hr {
 .homepage-div{
     display: flex;
     align-items: center;
-    gap: 10px; /* optional – spacing between logo and text */
+    gap: 10px; 
 }
 #hp{
     font-size: 1.4em;
