@@ -44,6 +44,13 @@ h1 a{
     font-size: 6.4em;
     color: rgb(99, 41, 0);
 }
+#guide{
+    margin-top: 2.6em;
+    margin-bottom: 2.6em;
+    font-size: 4em;
+    color: rgb(99, 41, 0);
+}
+
 hr {
     border-style: none;
     border-top-style: dotted;
@@ -96,4 +103,45 @@ body{
 
 .about-page{
     margin-bottom: 3%;
+}
+
+.phishing-text{
+    width: 250px;
+    height: 250px;
+    text-align: justify;
+
+}
+
+.phishing-img{
+    width: auto;
+    height: 250px
+}
+
+.phishing{
+    margin-left: 20em;
+    display: inline-block;
+    position: relative;
+}
+
+.phish{
+    text-align: center;
+}
+
+.pass-text{
+    width: 250px;
+    height: 250px;
+    text-align: justify;
+}
+
+.password{
+    margin-left: 20em;
+    display: inline-block;
+    position: relative;
+}
+.pass-img{
+    width: auto;
+    height: 250px
+}
+.pass{
+    text-align: left;
 }
