@@ -39,16 +39,38 @@ h1 a{
 }
 
 #welcome{
-    margin-top: 2.6em;
-    margin-bottom: 2.6em;
-    font-size: 6.4em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 10em;
     color: rgb(99, 41, 0);
+    opacity: 0;
+    transform: scale(0.3);
 }
+
+@keyframes zoom-in{
+    from{
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.zoom-in{
+    animation: zoom-in 1s ease-out forwards;
+}
+
 #guide{
     margin-top: 2.6em;
     margin-bottom: 2.6em;
-    font-size: 4em;
+    font-size: 5em;
     color: rgb(99, 41, 0);
+    opacity: 0;
+    transform: scale(0.3);
 }
 
 hr {
@@ -72,19 +94,44 @@ img{
 
 .guide-page{
     margin-bottom: 3%;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 1s ease-out;
 }
+
+.guide-page.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
 
 .pass-check-page{
     display: inline-block;
     position: relative;
     margin-left: 25%;
     margin-right: 10%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s ease-out;
+}
+
+.pass-check-page.show{
+    opacity: 1;
+    transform: translate(0);
 }
 
 .pass-gen-page{
     display: inline-block;
     position: relative;
     margin-right: 20%;
+    opacity: 0;
+    transform: translate(50%);
+    transition: all 1s ease-out;
+}
+
+.pass-gen-page.show{
+    opacity: 1;
+    transform: translate(0);
 }
 
 body{
@@ -103,13 +150,50 @@ body{
 
 .about-page{
     margin-bottom: 3%;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 1s ease-out;
 }
 
+.about-page.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.phishing{
+    opacity: 0;
+    transform: translate(-50%);
+    transition: all 1s ease-out;
+}
+
+.phishing.show{
+    opacity: 1;
+    transform: translate(0);
+}
 
 .password{
     margin-right: 0px;
     margin-left: 75%;
     width: 350px;
+    opacity: 0;
+    transform: translate(50%);
+    transition: all 1s ease-out
+}
+
+.password.show{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.malware{
+    opacity: 0;
+    transform: translate(-50%);
+    transition: all 1s ease-out
+}
+
+.malware.show{
+    opacity: 1;
+    transform: translate(0);
 }
 
 .password h1{
@@ -135,10 +219,29 @@ body{
     margin-right: 0px;
     margin-left: 75%;
     width: 350px;
+    opacity: 0;
+    transform: translate(50%);
+    transition: all 1s ease-out
+}
+
+.browsing.show{
+    opacity: 1;
+    transform: translate(0);
 }
 
 .browsing h1{
     text-align: left;
+}
+
+.safety{
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 1s ease-out
+}
+
+.safety.show{
+    opacity: 1;
+    transform: scale(1);
 }
 
 .safety p{
@@ -146,11 +249,15 @@ body{
     height: auto;
     text-align: justify;
     margin-top: 3em;
-    background-color: rgb(248, 206, 151);
     padding: 20px;
-    border-radius: 30px;
     color: rgb(99, 41, 0);
     font-weight: bold;
+}
+
+.safety p:hover{
+        background-color: rgb(248, 206, 151);
+        border-radius: 30px;
+        transition: 0.2s;
 }
 
 .safety img{
@@ -158,16 +265,25 @@ body{
     height: 250px
 }
 
+.safety img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 table p{
     width: 250px;
     height: auto;
     text-align: justify;
     margin-top: 20%;
-    background-color: rgb(248, 206, 151);
     padding: 20px;
-    border-radius: 30px;
     color: rgb(99, 41, 0);
     font-weight: bold;
+}
+
+table p:hover{
+        background-color: rgb(248, 206, 151);
+        border-radius: 30px;
+        transition: 0.2s;
 }
 
 table img{
@@ -175,7 +291,22 @@ table img{
     height: 250px
 }
 
+table img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 table h1{
     text-align: left;
     position: relative;
+}
+
+.pages-row img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.about-page img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
