@@ -73,6 +73,15 @@ h1 a{
     transform: scale(0.3);
 }
 
+#thanks{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: 10em;
+    color: rgb(99, 41, 0);
+    opacity: 0;
+    transform: scale(0.3);
+}
+
 hr {
     border-style: none;
     border-top-style: dotted;
@@ -309,4 +318,35 @@ table h1{
 .about-page img:hover{
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+.pass-check-page img{
+    width: 250px;
+    height: 250px
+}
+
+.pass-gen-page img{
+    width: 250px;
+    height: 250px
+}
+
+.about-page img{
+    width: 128px;
+    height: 128px
+}
+
+.guide-page img{
+    width: 250px;
+    height: 250px
+}
+
+.names p{
+    color: darkred;
+    font-size: large;
+    font-weight: bold;
+}
+
+.names{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }

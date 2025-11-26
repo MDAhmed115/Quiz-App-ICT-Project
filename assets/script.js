@@ -6,6 +6,13 @@ window.addEventListener("load", function() {
 });
 
 window.addEventListener("load", function() {
+    const thanks = document.getElementById("thanks");
+    if (thanks){
+        thanks.classList.add("zoom-in");
+    }
+});
+
+window.addEventListener("load", function() {
     const guide = document.getElementById("guide");
     if (guide){
         guide.classList.add("zoom-in");
