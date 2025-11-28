@@ -82,12 +82,16 @@
         if (num>=3){
             score+=30;
         }
+        if (password.length>=20){
+            score +=50;
+        }
         if(score>100){
             score=100;
         }
         if(password.length<=7){
             score-=20;
         }
+        
         document.getElementById("passwordreportJs").innerHTML = "password strength is "+score+"%";
 
     }

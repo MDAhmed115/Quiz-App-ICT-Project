@@ -49,7 +49,7 @@
     function genpsw(){
         var mypsw="";
         const alphnum="qwertyuiopasdfghjklzxcvbnm,.;[]{}WERTYUIOPASDFGHJKLZXCVBN1234567890!@#$%^&*()";
-        for(let i=0;i<12;i++){
+        for(let i=0;i<20;i++){
             mypsw+=alphnum[Math.floor(Math.random()*alphnum.length)]
         }
         document.getElementById("passwordJs").innerHTML = mypsw;
